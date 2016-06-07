@@ -295,10 +295,10 @@ public class MetaDataElement implements Serializable {
     public void setNestedElements(Vector<LinkedHashMap<String, MetaDataElement>> nestedElements) {
         this.nestedElements = nestedElements;
     }
-	
+    
     public void setNestedElement(String name, MetaDataElement nestedElement) {
 
-	boolean addNewHashMap = false;
+        boolean addNewHashMap = false;
         if (nestedElements.isEmpty()) {
             LinkedHashMap<String, MetaDataElement> lhm = new LinkedHashMap<String, MetaDataElement>();
             lhm.put(name, nestedElement);
